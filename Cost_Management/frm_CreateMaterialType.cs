@@ -36,6 +36,7 @@ namespace Cost_Management
             btn_AddMaterialTypeData.Enabled = false;
             btn_ImportExcel.Enabled = true;
             dtgv_ImportExcel.DataSource = null;
+            lst_mt_data.Clear();
         }    
 
         public void loadMaterialTypeGroup()
@@ -106,20 +107,21 @@ namespace Cost_Management
 
         private void btn_ImportExcel_Click(object sender, EventArgs e)
         {
+            loadImportExcelMaterialTypeGroup();
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Excel Files|*.xls;*.xlsx";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = openFileDialog.FileName;
-                LoadExcelToDataGridView(filePath);
+                loadExcelToDataGridView(filePath);
 
                 btn_AddMaterialTypeData.Enabled = true;
                 btn_ImportExcel.Enabled = false;
             }
         }
 
-        public void LoadExcelToDataGridView(string filePath)
+        public void loadExcelToDataGridView(string filePath)
         {
             try
             {

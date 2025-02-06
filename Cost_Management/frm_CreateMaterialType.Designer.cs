@@ -59,7 +59,7 @@ namespace Cost_Management
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1383, 77);
+            this.panel1.Size = new System.Drawing.Size(1522, 77);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -85,7 +85,7 @@ namespace Cost_Management
             this.groupBox1.Controls.Add(this.dtgv_MaterialType);
             this.groupBox1.Location = new System.Drawing.Point(22, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(676, 567);
+            this.groupBox1.Size = new System.Drawing.Size(779, 567);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Loại Vật Tư";
@@ -112,7 +112,7 @@ namespace Cost_Management
             // 
             // btn_AutoGenarateId
             // 
-            this.btn_AutoGenarateId.Location = new System.Drawing.Point(388, 381);
+            this.btn_AutoGenarateId.Location = new System.Drawing.Point(394, 404);
             this.btn_AutoGenarateId.Name = "btn_AutoGenarateId";
             this.btn_AutoGenarateId.Size = new System.Drawing.Size(123, 63);
             this.btn_AutoGenarateId.TabIndex = 17;
@@ -156,12 +156,12 @@ namespace Cost_Management
             this.dtgv_MaterialType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgv_MaterialType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_MaterialType.Location = new System.Drawing.Point(38, 37);
+            this.dtgv_MaterialType.Location = new System.Drawing.Point(28, 37);
             this.dtgv_MaterialType.Name = "dtgv_MaterialType";
             this.dtgv_MaterialType.RowHeadersWidth = 51;
             this.dtgv_MaterialType.RowTemplate.Height = 24;
             this.dtgv_MaterialType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgv_MaterialType.Size = new System.Drawing.Size(603, 305);
+            this.dtgv_MaterialType.Size = new System.Drawing.Size(726, 305);
             this.dtgv_MaterialType.TabIndex = 12;
             // 
             // groupBox2
@@ -171,9 +171,9 @@ namespace Cost_Management
             this.groupBox2.Controls.Add(this.btn_AddMaterialTypeData);
             this.groupBox2.Controls.Add(this.btn_ImportExcel);
             this.groupBox2.Controls.Add(this.dtgv_ImportExcel);
-            this.groupBox2.Location = new System.Drawing.Point(778, 110);
+            this.groupBox2.Location = new System.Drawing.Point(887, 110);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(593, 444);
+            this.groupBox2.Size = new System.Drawing.Size(623, 444);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thêm dữ liệu bằng file";
@@ -218,14 +218,14 @@ namespace Cost_Management
             this.dtgv_ImportExcel.RowHeadersWidth = 51;
             this.dtgv_ImportExcel.RowTemplate.Height = 24;
             this.dtgv_ImportExcel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgv_ImportExcel.Size = new System.Drawing.Size(565, 305);
+            this.dtgv_ImportExcel.Size = new System.Drawing.Size(595, 305);
             this.dtgv_ImportExcel.TabIndex = 6;
             // 
             // frm_CreateMaterialType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1383, 704);
+            this.ClientSize = new System.Drawing.Size(1522, 704);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);

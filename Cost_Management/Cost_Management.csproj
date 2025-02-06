@@ -111,6 +111,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_CreateMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateMaterial.Designer.cs">
+      <DependentUpon>frm_CreateMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CreateMaterialType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,20 +135,29 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Ingredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ingredient.Designer.cs">
+      <DependentUpon>frm_Ingredient.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ViewMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_ViewMaterial.Designer.cs">
       <DependentUpon>frm_ViewMaterial.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_ViewProduct.cs">
+    <Compile Include="frm_Product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_ViewProduct.Designer.cs">
-      <DependentUpon>frm_ViewProduct.cs</DependentUpon>
+    <Compile Include="frm_Product.Designer.cs">
+      <DependentUpon>frm_Product.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_CreateMaterial.resx">
+      <DependentUpon>frm_CreateMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CreateMaterialType.resx">
       <DependentUpon>frm_CreateMaterialType.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,11 +167,14 @@
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ingredient.resx">
+      <DependentUpon>frm_Ingredient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ViewMaterial.resx">
       <DependentUpon>frm_ViewMaterial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_ViewProduct.resx">
-      <DependentUpon>frm_ViewProduct.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Product.resx">
+      <DependentUpon>frm_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

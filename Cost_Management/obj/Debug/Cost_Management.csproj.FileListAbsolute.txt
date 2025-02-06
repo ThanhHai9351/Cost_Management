@@ -39,7 +39,6 @@ F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\System.Text.Encodings.W
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\System.Text.Json.xml
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\System.Threading.Tasks.Extensions.xml
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\System.ValueTuple.xml
-F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_ViewProduct.resources
 F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_ViewMaterial.resources
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\EPPlus.dll
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\EPPlus.Interfaces.dll
@@ -52,3 +51,6 @@ F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\Microsoft.IO.Recyclable
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\System.Drawing.Common.pdb
 F:\Labone_task\Cost_Management\Cost_Management\bin\Debug\System.Drawing.Common.xml
 F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_CreateMaterialType.resources
+F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_CreateMaterial.resources
+F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Ingredient.resources
+F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Product.resources

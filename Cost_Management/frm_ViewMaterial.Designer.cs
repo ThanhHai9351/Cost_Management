@@ -40,7 +40,6 @@ namespace Cost_Management
             this.btn_EditMaterialType = new System.Windows.Forms.Button();
             this.btn_ReLoadMaterialType = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_SearchMaterialType = new System.Windows.Forms.TextBox();
             this.cbo_FilterMaterialType = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -58,16 +57,17 @@ namespace Cost_Management
             this.btn_ReloadMaterial = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.dtgv_Material = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cbo_FilterMaterial = new System.Windows.Forms.ComboBox();
             this.txt_SearchNameMaterial = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MaterialType)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Material)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -190,16 +190,6 @@ namespace Cost_Management
             this.label2.Size = new System.Drawing.Size(100, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Sắp xếp theo";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cost_Management.Properties.Resources.transparency;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // txt_SearchMaterialType
             // 
@@ -372,16 +362,6 @@ namespace Cost_Management
             this.dtgv_Material.TabIndex = 0;
             this.dtgv_Material.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Material_CellClick);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Cost_Management.Properties.Resources.transparency;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 34);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // cbo_FilterMaterial
             // 
             this.cbo_FilterMaterial.FormattingEnabled = true;
@@ -399,10 +379,31 @@ namespace Cost_Management
             this.txt_SearchNameMaterial.TabIndex = 8;
             this.txt_SearchNameMaterial.TextChanged += new System.EventHandler(this.txt_SearchNameMaterial_TextChanged);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Cost_Management.Properties.Resources.transparency;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cost_Management.Properties.Resources.transparency;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_ViewMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1749, 692);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -415,11 +416,11 @@ namespace Cost_Management
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MaterialType)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Material)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

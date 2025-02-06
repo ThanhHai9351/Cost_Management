@@ -69,5 +69,19 @@ namespace DAL
                 return false;
             }
         }
+
+        public bool insertMaterial(t_Material item)
+        {
+            try
+            {
+                qlgt.t_Materials.InsertOnSubmit(item);
+                qlgt.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

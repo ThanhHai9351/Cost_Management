@@ -29,5 +29,58 @@ namespace BLL
         {
             return dal_mt.deleteMaterial(material_id);
         }
+
+        public bool checkMaterialId(string material_id)
+        {
+            List<t_Material> list_materials = getMaterials();
+            t_Material check_item = list_materials.Where(m => m.material_id == material_id).FirstOrDefault();
+            if (check_item == null)
+                return false;
+            return true;
+        }
+
+        public bool insertMaterial(t_Material item)
+        {
+            return dal_mt.insertMaterial(item);
+        }
+
+        public List<t_Material> checkContainMaterial(List<t_Material> lists)
+        {
+            List<t_Material> list_contains = new List<t_Material>();
+            foreach (t_Material item in lists)
+            {
+                if (checkMaterialId(item.material_id))
+                {
+                    list_contains.Add(item);
+                }
+            }
+
+            if (list_contains.Count > 0)
+            {
+                return list_contains;
+            }
+
+            return null;
+        }
+
+        public bool insertListMaterials(List<t_Material> lists)
+        {
+            try
+            {
+                foreach (t_Material item_add in lists)
+                {
+                    if (checkMaterialId(item_add.material_type_id))
+                    {
+                        continue;
+                    }
+                    insertMaterial(item_add);
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

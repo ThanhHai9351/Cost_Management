@@ -53,15 +53,27 @@ namespace Cost_Management
             showForm(frm);
         }
 
-        private void XemSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_ViewProduct frm = new frm_ViewProduct();
-            showForm(frm);
-        }
-
         private void thêmLoạiVậtTưToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_CreateMaterialType frm = new frm_CreateMaterialType();
+            showForm(frm);
+        }
+
+        private void thêmVậtTưToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_CreateMaterial frm = new frm_CreateMaterial();
+            showForm(frm);
+        }
+
+        private void quảnLýNguyênLiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Ingredient frm = new frm_Ingredient();
+            showForm(frm);
+        }
+
+        private void QLSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Product frm = new frm_Product();
             showForm(frm);
         }
     }
