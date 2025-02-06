@@ -1,0 +1,5 @@
+F:\Labone_task\Cost_Management\Custom_Field\bin\Debug\Custom_Field.dll
+F:\Labone_task\Cost_Management\Custom_Field\bin\Debug\Custom_Field.pdb
+F:\Labone_task\Cost_Management\Custom_Field\obj\Debug\Custom_Field.csproj.CoreCompileInputs.cache
+F:\Labone_task\Cost_Management\Custom_Field\obj\Debug\Custom_Field.dll
+F:\Labone_task\Cost_Management\Custom_Field\obj\Debug\Custom_Field.pdb

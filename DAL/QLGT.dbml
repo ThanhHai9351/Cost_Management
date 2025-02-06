@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CostManagement" Class="QLGTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHHAI;Initial Catalog=CostManagement;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="CostManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.m_Product_Ingredient" Member="m_Product_Ingredients">
+    <Type Name="m_Product_Ingredient">
+      <Column Name="ingredient_id" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="product_code" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="t_Ingredient_m_Product_Ingredient" Member="t_Ingredient" ThisKey="ingredient_id" OtherKey="ingredient_id" Type="t_Ingredient" IsForeignKey="true" />
+      <Association Name="t_Product_m_Product_Ingredient" Member="t_Product" ThisKey="product_code" OtherKey="product_code" Type="t_Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_User_Activity_Log" Member="t_User_Activity_Logs">
+    <Type Name="t_User_Activity_Log">
+      <Column Name="history_log" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.m_Product_Material" Member="m_Product_Materials">
+    <Type Name="m_Product_Material">
+      <Column Name="material_id" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="product_code" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="t_Material_m_Product_Material" Member="t_Material" ThisKey="material_id" OtherKey="material_id" Type="t_Material" IsForeignKey="true" />
+      <Association Name="t_Product_m_Product_Material" Member="t_Product" ThisKey="product_code" OtherKey="product_code" Type="t_Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Account" Member="t_Accounts">
+    <Type Name="t_Account">
+      <Column Name="staff_id" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="staff_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="role" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Ingredient" Member="t_Ingredients">
+    <Type Name="t_Ingredient">
+      <Column Name="ingredient_id" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ingredient_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="price_per_unit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="t_Ingredient_m_Product_Ingredient" Member="m_Product_Ingredients" ThisKey="ingredient_id" OtherKey="ingredient_id" Type="m_Product_Ingredient" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Material" Member="t_Materials">
+    <Type Name="t_Material">
+      <Column Name="material_id" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="material_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="price_per_unit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="material_type_id" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="t_Material_m_Product_Material" Member="m_Product_Materials" ThisKey="material_id" OtherKey="material_id" Type="m_Product_Material" />
+      <Association Name="t_Material_Type_t_Material" Member="t_Material_Type" ThisKey="material_type_id" OtherKey="material_type_id" Type="t_Material_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Material_Type" Member="t_Material_Types">
+    <Type Name="t_Material_Type">
+      <Column Name="material_type_id" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="material_type_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="t_Material_Type_t_Material" Member="t_Materials" ThisKey="material_type_id" OtherKey="material_type_id" Type="t_Material" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_Product" Member="t_Products">
+    <Type Name="t_Product">
+      <Column Name="product_code" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="product_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="t_Product_m_Product_Ingredient" Member="m_Product_Ingredients" ThisKey="product_code" OtherKey="product_code" Type="m_Product_Ingredient" />
+      <Association Name="t_Product_m_Product_Material" Member="m_Product_Materials" ThisKey="product_code" OtherKey="product_code" Type="m_Product_Material" />
+    </Type>
+  </Table>
+</Database>

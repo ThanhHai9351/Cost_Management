@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.625" name="QLGT">
+  <DataContextMoniker Name="/QLGTDataContext" />
+  <nestedChildShapes>
+    <classShape Id="84aabdc7-28c3-4b6e-8634-5d521f16a013" absoluteBounds="3.5, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLGTDataContext/m_Product_Ingredient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c88f9d7-2885-40c7-8d58-85f737010b88" absoluteBounds="3.515, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9221ae0d-6686-455c-a83b-85fa63aee328" absoluteBounds="3.75, 6.375, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLGTDataContext/t_User_Activity_Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c0d5eff-e7ff-4315-83d6-e23b55943f3c" absoluteBounds="3.765, 6.835, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aaf48237-e727-45f9-a602-8846b55e5873" absoluteBounds="3.5, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLGTDataContext/m_Product_Material" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8cbaeef2-584e-494e-95f8-eff588edd5a5" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0495f03a-5f7e-4ebb-9026-6b3e00fb87b0" absoluteBounds="6.75, 2.375, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/QLGTDataContext/t_Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5950b43f-633d-4998-92dd-eecd46548ae3" absoluteBounds="6.765, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b78186b-c490-4473-a2ac-ea674aea76f9" absoluteBounds="0.75, 12.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLGTDataContext/t_Ingredient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a917bd7-3121-45ce-9bfc-6d406b256e17" absoluteBounds="0.765, 13.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e01de9c-f7a3-4dfc-b5b8-a4a3202620bf" absoluteBounds="0.75, 7.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLGTDataContext/t_Material" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb9a341f-041b-4e44-8446-16961fd6402f" absoluteBounds="0.765, 7.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="401a500f-cc5e-402e-9657-fda9f4574968" absoluteBounds="1.5, 10.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/QLGTDataContext/t_Material_Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a56872bc-9c65-4e91-b382-4f6f47d69982" absoluteBounds="1.5150000000000001, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a500f5e-7b74-41a5-a1f6-4ed7e561771a" absoluteBounds="0.75, 4, 2, 1.193992513020834">
+      <DataClassMoniker Name="/QLGTDataContext/t_Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a4f40af-8653-4b36-bb86-0bc6d877afbe" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 13.5392976888021); (3.625 : 13.5392976888021); (3.625 : 5.32859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGTDataContext/t_Ingredient/t_Ingredient_m_Product_Ingredient" />
+      <nodes>
+        <classShapeMoniker Id="2b78186b-c490-4473-a2ac-ea674aea76f9" />
+        <classShapeMoniker Id="84aabdc7-28c3-4b6e-8634-5d521f16a013" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.125); (3.125 : 6.75); (3.125 : 1.53929768880208); (3.5 : 1.53929768880208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGTDataContext/t_Material/t_Material_m_Product_Material" />
+      <nodes>
+        <classShapeMoniker Id="4e01de9c-f7a3-4dfc-b5b8-a4a3202620bf" />
+        <classShapeMoniker Id="aaf48237-e727-45f9-a602-8846b55e5873" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 10.375); (2.125 : 8.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGTDataContext/t_Material_Type/t_Material_Type_t_Material" />
+      <nodes>
+        <classShapeMoniker Id="401a500f-cc5e-402e-9657-fda9f4574968" />
+        <classShapeMoniker Id="4e01de9c-f7a3-4dfc-b5b8-a4a3202620bf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.59699625651042); (3.04166666666667 : 4.59699625651042 : JumpStart); (3.20833333333333 : 4.59699625651042 : JumpEnd); (3.5 : 4.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGTDataContext/t_Product/t_Product_m_Product_Ingredient" />
+      <nodes>
+        <classShapeMoniker Id="0a500f5e-7b74-41a5-a1f6-4ed7e561771a" />
+        <classShapeMoniker Id="84aabdc7-28c3-4b6e-8634-5d521f16a013" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 4); (1.75 : 1.96519903320312); (3.04166666666667 : 1.96519903320312 : JumpStart); (3.20833333333333 : 1.96519903320312 : JumpEnd); (3.5 : 1.96519903320312)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGTDataContext/t_Product/t_Product_m_Product_Material" />
+      <nodes>
+        <classShapeMoniker Id="0a500f5e-7b74-41a5-a1f6-4ed7e561771a" />
+        <classShapeMoniker Id="aaf48237-e727-45f9-a602-8846b55e5873" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
