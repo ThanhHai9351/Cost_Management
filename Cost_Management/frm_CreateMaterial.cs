@@ -38,6 +38,7 @@ namespace Cost_Management
             btn_AddMaterialData.Enabled = false;
 
             dtgv_ImportExcel.DataSource = null;
+            lst_m_data.Clear(); 
         }
 
         public void loadMaterialGroup()

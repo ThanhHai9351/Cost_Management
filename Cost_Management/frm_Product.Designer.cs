@@ -29,6 +29,7 @@ namespace Cost_Management
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -37,6 +38,7 @@ namespace Cost_Management
             this.btn_ImportExcel = new System.Windows.Forms.Button();
             this.dtgv_ImportExcel = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_SaveChangeProduct = new System.Windows.Forms.Button();
             this.btn_DeleteProduct = new System.Windows.Forms.Button();
             this.btn_AutoGenarateId = new System.Windows.Forms.Button();
             this.btn_EditProduct = new System.Windows.Forms.Button();
@@ -47,11 +49,15 @@ namespace Cost_Management
             this.txt_IdProduct = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dtgv_Product = new System.Windows.Forms.DataGridView();
+            this.menu_ProductManagement = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.quảnLýNguyênLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýVậtTưToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ImportExcel)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Product)).BeginInit();
+            this.menu_ProductManagement.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,6 +102,7 @@ namespace Cost_Management
             this.btn_CancerImportExcel.TabIndex = 9;
             this.btn_CancerImportExcel.Text = "Hủy thao tác";
             this.btn_CancerImportExcel.UseVisualStyleBackColor = true;
+            this.btn_CancerImportExcel.Click += new System.EventHandler(this.btn_CancerImportExcel_Click);
             // 
             // btn_AddProductData
             // 
@@ -105,6 +112,7 @@ namespace Cost_Management
             this.btn_AddProductData.TabIndex = 8;
             this.btn_AddProductData.Text = "Thêm dữ liệu";
             this.btn_AddProductData.UseVisualStyleBackColor = true;
+            this.btn_AddProductData.Click += new System.EventHandler(this.btn_AddProductData_Click);
             // 
             // btn_ImportExcel
             // 
@@ -114,6 +122,7 @@ namespace Cost_Management
             this.btn_ImportExcel.TabIndex = 7;
             this.btn_ImportExcel.Text = "Import Excel";
             this.btn_ImportExcel.UseVisualStyleBackColor = true;
+            this.btn_ImportExcel.Click += new System.EventHandler(this.btn_ImportExcel_Click);
             // 
             // dtgv_ImportExcel
             // 
@@ -130,6 +139,7 @@ namespace Cost_Management
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_SaveChangeProduct);
             this.groupBox1.Controls.Add(this.btn_DeleteProduct);
             this.groupBox1.Controls.Add(this.btn_AutoGenarateId);
             this.groupBox1.Controls.Add(this.btn_EditProduct);
@@ -147,14 +157,25 @@ namespace Cost_Management
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sản phẩm";
             // 
+            // btn_SaveChangeProduct
+            // 
+            this.btn_SaveChangeProduct.Location = new System.Drawing.Point(456, 406);
+            this.btn_SaveChangeProduct.Name = "btn_SaveChangeProduct";
+            this.btn_SaveChangeProduct.Size = new System.Drawing.Size(105, 49);
+            this.btn_SaveChangeProduct.TabIndex = 40;
+            this.btn_SaveChangeProduct.Text = "Lưu";
+            this.btn_SaveChangeProduct.UseVisualStyleBackColor = true;
+            this.btn_SaveChangeProduct.Click += new System.EventHandler(this.btn_SaveChangeProduct_Click);
+            // 
             // btn_DeleteProduct
             // 
-            this.btn_DeleteProduct.Location = new System.Drawing.Point(341, 406);
+            this.btn_DeleteProduct.Location = new System.Drawing.Point(334, 406);
             this.btn_DeleteProduct.Name = "btn_DeleteProduct";
             this.btn_DeleteProduct.Size = new System.Drawing.Size(105, 49);
             this.btn_DeleteProduct.TabIndex = 40;
             this.btn_DeleteProduct.Text = "Xóa";
             this.btn_DeleteProduct.UseVisualStyleBackColor = true;
+            this.btn_DeleteProduct.Click += new System.EventHandler(this.btn_DeleteProduct_Click);
             // 
             // btn_AutoGenarateId
             // 
@@ -167,12 +188,13 @@ namespace Cost_Management
             // 
             // btn_EditProduct
             // 
-            this.btn_EditProduct.Location = new System.Drawing.Point(207, 406);
+            this.btn_EditProduct.Location = new System.Drawing.Point(200, 406);
             this.btn_EditProduct.Name = "btn_EditProduct";
             this.btn_EditProduct.Size = new System.Drawing.Size(105, 49);
             this.btn_EditProduct.TabIndex = 39;
             this.btn_EditProduct.Text = "Sửa";
             this.btn_EditProduct.UseVisualStyleBackColor = true;
+            this.btn_EditProduct.Click += new System.EventHandler(this.btn_EditProduct_Click);
             // 
             // txt_NameProduct
             // 
@@ -183,21 +205,23 @@ namespace Cost_Management
             // 
             // btn_CancerProduct
             // 
-            this.btn_CancerProduct.Location = new System.Drawing.Point(479, 404);
+            this.btn_CancerProduct.Location = new System.Drawing.Point(583, 403);
             this.btn_CancerProduct.Name = "btn_CancerProduct";
             this.btn_CancerProduct.Size = new System.Drawing.Size(103, 51);
             this.btn_CancerProduct.TabIndex = 37;
             this.btn_CancerProduct.Text = "Hủy thao tác";
             this.btn_CancerProduct.UseVisualStyleBackColor = true;
+            this.btn_CancerProduct.Click += new System.EventHandler(this.btn_CancerProduct_Click);
             // 
             // btn_CreateProduct
             // 
-            this.btn_CreateProduct.Location = new System.Drawing.Point(74, 405);
+            this.btn_CreateProduct.Location = new System.Drawing.Point(67, 405);
             this.btn_CreateProduct.Name = "btn_CreateProduct";
             this.btn_CreateProduct.Size = new System.Drawing.Size(105, 49);
             this.btn_CreateProduct.TabIndex = 36;
             this.btn_CreateProduct.Text = "Thêm";
             this.btn_CreateProduct.UseVisualStyleBackColor = true;
+            this.btn_CreateProduct.Click += new System.EventHandler(this.btn_CreateProduct_Click);
             // 
             // label3
             // 
@@ -229,12 +253,36 @@ namespace Cost_Management
             this.dtgv_Product.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgv_Product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_Product.ContextMenuStrip = this.menu_ProductManagement;
             this.dtgv_Product.Location = new System.Drawing.Point(6, 37);
             this.dtgv_Product.Name = "dtgv_Product";
             this.dtgv_Product.RowHeadersWidth = 51;
             this.dtgv_Product.RowTemplate.Height = 24;
+            this.dtgv_Product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgv_Product.Size = new System.Drawing.Size(753, 349);
             this.dtgv_Product.TabIndex = 0;
+            this.dtgv_Product.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Product_CellClick);
+            // 
+            // menu_ProductManagement
+            // 
+            this.menu_ProductManagement.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menu_ProductManagement.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quảnLýNguyênLiệuToolStripMenuItem,
+            this.quảnLýVậtTưToolStripMenuItem});
+            this.menu_ProductManagement.Name = "menu_ProductManagement";
+            this.menu_ProductManagement.Size = new System.Drawing.Size(209, 52);
+            // 
+            // quảnLýNguyênLiệuToolStripMenuItem
+            // 
+            this.quảnLýNguyênLiệuToolStripMenuItem.Name = "quảnLýNguyênLiệuToolStripMenuItem";
+            this.quảnLýNguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.quảnLýNguyênLiệuToolStripMenuItem.Text = "Quản lý nguyên liệu";
+            // 
+            // quảnLýVậtTưToolStripMenuItem
+            // 
+            this.quảnLýVậtTưToolStripMenuItem.Name = "quảnLýVậtTưToolStripMenuItem";
+            this.quảnLýVậtTưToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.quảnLýVậtTưToolStripMenuItem.Text = "Quản lý vật tư";
             // 
             // frm_Product
             // 
@@ -254,6 +302,7 @@ namespace Cost_Management
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Product)).EndInit();
+            this.menu_ProductManagement.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -278,5 +327,9 @@ namespace Cost_Management
         private System.Windows.Forms.TextBox txt_IdProduct;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtgv_Product;
+        private System.Windows.Forms.Button btn_SaveChangeProduct;
+        private System.Windows.Forms.ContextMenuStrip menu_ProductManagement;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýNguyênLiệuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýVậtTưToolStripMenuItem;
     }
 }
