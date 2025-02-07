@@ -145,6 +145,12 @@
     <Compile Include="frm_Ingredient.Designer.cs">
       <DependentUpon>frm_Ingredient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Product_Ingredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Product_Ingredient.Designer.cs">
+      <DependentUpon>frm_Product_Ingredient.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ViewMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Ingredient.resx">
       <DependentUpon>frm_Ingredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Product_Ingredient.resx">
+      <DependentUpon>frm_Product_Ingredient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ViewMaterial.resx">
       <DependentUpon>frm_ViewMaterial.cs</DependentUpon>

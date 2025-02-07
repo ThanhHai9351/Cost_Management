@@ -270,18 +270,19 @@ namespace Cost_Management
             this.quảnLýNguyênLiệuToolStripMenuItem,
             this.quảnLýVậtTưToolStripMenuItem});
             this.menu_ProductManagement.Name = "menu_ProductManagement";
-            this.menu_ProductManagement.Size = new System.Drawing.Size(209, 52);
+            this.menu_ProductManagement.Size = new System.Drawing.Size(211, 80);
             // 
             // quảnLýNguyênLiệuToolStripMenuItem
             // 
             this.quảnLýNguyênLiệuToolStripMenuItem.Name = "quảnLýNguyênLiệuToolStripMenuItem";
-            this.quảnLýNguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.quảnLýNguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.quảnLýNguyênLiệuToolStripMenuItem.Text = "Quản lý nguyên liệu";
+            this.quảnLýNguyênLiệuToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNguyênLiệuToolStripMenuItem_Click);
             // 
             // quảnLýVậtTưToolStripMenuItem
             // 
             this.quảnLýVậtTưToolStripMenuItem.Name = "quảnLýVậtTưToolStripMenuItem";
-            this.quảnLýVậtTưToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
+            this.quảnLýVậtTưToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.quảnLýVậtTưToolStripMenuItem.Text = "Quản lý vật tư";
             // 
             // frm_Product

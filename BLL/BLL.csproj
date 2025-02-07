@@ -50,6 +50,7 @@
     <Compile Include="BLL_Material.cs" />
     <Compile Include="BLL_MaterialType.cs" />
     <Compile Include="BLL_Product.cs" />
+    <Compile Include="BLL_Product_Ingredient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

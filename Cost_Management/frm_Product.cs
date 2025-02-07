@@ -292,5 +292,22 @@ namespace Cost_Management
                 }
             }
         }
+
+        private void quảnLýNguyênLiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dtgv_Product.SelectedRows.Count > 0)
+            {
+                DataGridViewRow clickedRow = dtgv_Product.SelectedRows[0];
+                string product_code = clickedRow.Cells[0].Value.ToString().Trim();
+                string product_name = clickedRow.Cells[1].Value.ToString().Trim();
+
+                t_Product p = new t_Product();
+                p.product_code = product_code;
+                p.product_name = product_name;
+
+                frm_Product_Ingredient frm = new frm_Product_Ingredient(p);
+                frm.ShowDialog();
+            }
+        }
     }
 }

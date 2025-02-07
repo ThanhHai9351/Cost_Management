@@ -20,6 +20,14 @@ namespace BLL
             return dal_i.getIngredients();
         }
 
+        public string getIngredientName(string ingredient_id)
+        {
+            t_Ingredient item = getIngredients().Where(m => m.ingredient_id == ingredient_id).FirstOrDefault();
+            if (item == null)
+                return "";
+            return item.ingredient_name;
+        }    
+
         public bool checkIngredientId(string ingredient_id)
         {
             List<t_Ingredient> list_is = getIngredients();

@@ -271,8 +271,8 @@ namespace Cost_Management
                                 ingredient.price_per_unit = price;
                             }
                             // Chuyển giá trị ô thành đối tượng t_Ingredient
-                            if (i == 0) ingredient.ingredient_id = cellValue;      // Mã vật tư
-                            if (i == 1) ingredient.ingredient_name = cellValue;    // Tên vật tư
+                            if (i == 0) ingredient.ingredient_id = cellValue;      // Mã nguyên liệu
+                            if (i == 1) ingredient.ingredient_name = cellValue;    // Tên nguyên liệu
                             if (i == 2) ingredient.unit = cellValue;      //  Đơn vị trí
                             //if (i == 3) material.price_per_unit = int.Parse(cellValue);    // Giá
 
