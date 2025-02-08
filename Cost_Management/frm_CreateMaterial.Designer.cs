@@ -210,7 +210,7 @@ namespace Cost_Management
             this.groupBox2.Controls.Add(this.btn_AddMaterialData);
             this.groupBox2.Controls.Add(this.btn_ImportExcel);
             this.groupBox2.Controls.Add(this.dtgv_ImportExcel);
-            this.groupBox2.Location = new System.Drawing.Point(753, 179);
+            this.groupBox2.Location = new System.Drawing.Point(711, 179);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(645, 489);
             this.groupBox2.TabIndex = 8;

@@ -36,10 +36,10 @@ namespace Cost_Management
             this.dtgv_Ingredient = new System.Windows.Forms.DataGridView();
             this.btn_ReLoadIngredient = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_SearchIngredient = new System.Windows.Forms.TextBox();
             this.cbo_FilterIngredient = new System.Windows.Forms.ComboBox();
             this.gb_Product = new System.Windows.Forms.GroupBox();
+            this.txt_Quantity = new Custom_Field.TextNumber();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.dtgv_Product_Ingredient = new System.Windows.Forms.DataGridView();
@@ -47,17 +47,17 @@ namespace Cost_Management
             this.cbo_FilterIngredientProduct = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_SearchIngredientProduct = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Remove = new System.Windows.Forms.Button();
-            this.txt_Quantity = new Custom_Field.TextNumber();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Ingredient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gb_Product.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Product_Ingredient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -126,16 +126,6 @@ namespace Cost_Management
             this.label2.TabIndex = 10;
             this.label2.Text = "Sắp xếp theo";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cost_Management.Properties.Resources.transparency;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
             // txt_SearchIngredient
             // 
             this.txt_SearchIngredient.Location = new System.Drawing.Point(42, 33);
@@ -171,6 +161,13 @@ namespace Cost_Management
             this.gb_Product.TabStop = false;
             this.gb_Product.Text = "Tên sản phẩm";
             // 
+            // txt_Quantity
+            // 
+            this.txt_Quantity.Location = new System.Drawing.Point(157, 454);
+            this.txt_Quantity.Name = "txt_Quantity";
+            this.txt_Quantity.Size = new System.Drawing.Size(151, 22);
+            this.txt_Quantity.TabIndex = 41;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -182,7 +179,7 @@ namespace Cost_Management
             // 
             // btn_Save
             // 
-            this.btn_Save.Location = new System.Drawing.Point(339, 440);
+            this.btn_Save.Location = new System.Drawing.Point(339, 438);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(113, 55);
             this.btn_Save.TabIndex = 13;
@@ -239,16 +236,6 @@ namespace Cost_Management
             this.txt_SearchIngredientProduct.TabIndex = 8;
             this.txt_SearchIngredientProduct.TextChanged += new System.EventHandler(this.txt_SearchIngredientProduct_TextChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Cost_Management.Properties.Resources.transparency;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 33);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // btn_Add
             // 
             this.btn_Add.Location = new System.Drawing.Point(767, 275);
@@ -269,12 +256,25 @@ namespace Cost_Management
             this.btn_Remove.UseVisualStyleBackColor = true;
             this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
             // 
-            // txt_Quantity
+            // pictureBox2
             // 
-            this.txt_Quantity.Location = new System.Drawing.Point(157, 459);
-            this.txt_Quantity.Name = "txt_Quantity";
-            this.txt_Quantity.Size = new System.Drawing.Size(151, 22);
-            this.txt_Quantity.TabIndex = 41;
+            this.pictureBox2.Image = global::Cost_Management.Properties.Resources.transparency;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cost_Management.Properties.Resources.transparency;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // frm_Product_Ingredient
             // 
@@ -295,11 +295,11 @@ namespace Cost_Management
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Ingredient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gb_Product.ResumeLayout(false);
             this.gb_Product.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Product_Ingredient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -33,6 +33,7 @@ namespace Cost_Management
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tổngQuátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sảnPhẩmToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.QLSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traCứuGiáToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,6 @@ namespace Cost_Management
             this.thêmVậtTưToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmLoạiVậtTưToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nguyênLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýNguyênLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -69,45 +69,60 @@ namespace Cost_Management
             this.sảnPhẩmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tổngQuátToolStripMenuItem,
             this.thoátToolStripMenuItem});
+            this.sảnPhẩmToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.home_button;
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.sảnPhẩmToolStripMenuItem.Text = "Trang chủ";
             // 
             // tổngQuátToolStripMenuItem
             // 
+            this.tổngQuátToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.house;
             this.tổngQuátToolStripMenuItem.Name = "tổngQuátToolStripMenuItem";
             this.tổngQuátToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.tổngQuátToolStripMenuItem.Text = "Tổng quát";
+            // 
+            // thoátToolStripMenuItem
+            // 
+            this.thoátToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.logout;
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // sảnPhẩmToolStripMenuItem1
             // 
             this.sảnPhẩmToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.QLSảnPhẩmToolStripMenuItem,
             this.traCứuGiáToolStripMenuItem1});
+            this.sảnPhẩmToolStripMenuItem1.Image = global::Cost_Management.Properties.Resources.box;
             this.sảnPhẩmToolStripMenuItem1.Name = "sảnPhẩmToolStripMenuItem1";
-            this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(89, 24);
+            this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(109, 24);
             this.sảnPhẩmToolStripMenuItem1.Text = "Sản phẩm";
             // 
             // QLSảnPhẩmToolStripMenuItem
             // 
+            this.QLSảnPhẩmToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.new_product;
             this.QLSảnPhẩmToolStripMenuItem.Name = "QLSảnPhẩmToolStripMenuItem";
-            this.QLSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.QLSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(213, 26);
             this.QLSảnPhẩmToolStripMenuItem.Text = "Quản Lý Sản Phẩm";
             this.QLSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.QLSảnPhẩmToolStripMenuItem_Click);
             // 
             // traCứuGiáToolStripMenuItem1
             // 
+            this.traCứuGiáToolStripMenuItem1.Image = global::Cost_Management.Properties.Resources.tag;
             this.traCứuGiáToolStripMenuItem1.Name = "traCứuGiáToolStripMenuItem1";
-            this.traCứuGiáToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.traCứuGiáToolStripMenuItem1.Size = new System.Drawing.Size(213, 26);
             this.traCứuGiáToolStripMenuItem1.Text = "Tra Cứu Giá";
+            this.traCứuGiáToolStripMenuItem1.Click += new System.EventHandler(this.traCứuGiáToolStripMenuItem1_Click);
             // 
             // nhânSựToolStripMenuItem
             // 
             this.nhânSựToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýQuyềnToolStripMenuItem,
             this.tạoTàiKhoảnToolStripMenuItem});
+            this.nhânSựToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.profile;
             this.nhânSựToolStripMenuItem.Name = "nhânSựToolStripMenuItem";
-            this.nhânSựToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.nhânSựToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.nhânSựToolStripMenuItem.Text = "Quyền";
             // 
             // quảnLýQuyềnToolStripMenuItem
@@ -128,28 +143,32 @@ namespace Cost_Management
             this.xemVậtTưToolStripMenuItem,
             this.thêmVậtTưToolStripMenuItem,
             this.thêmLoạiVậtTưToolStripMenuItem});
+            this.vậtTưToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.processing;
             this.vậtTưToolStripMenuItem.Name = "vậtTưToolStripMenuItem";
-            this.vậtTưToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.vậtTưToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.vậtTưToolStripMenuItem.Text = "Vật Tư";
             // 
             // xemVậtTưToolStripMenuItem
             // 
+            this.xemVậtTưToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.visibility;
             this.xemVậtTưToolStripMenuItem.Name = "xemVậtTưToolStripMenuItem";
-            this.xemVậtTưToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.xemVậtTưToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.xemVậtTưToolStripMenuItem.Text = "Xem Vật Tư";
             this.xemVậtTưToolStripMenuItem.Click += new System.EventHandler(this.xemVậtTưToolStripMenuItem_Click);
             // 
             // thêmVậtTưToolStripMenuItem
             // 
+            this.thêmVậtTưToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.insert;
             this.thêmVậtTưToolStripMenuItem.Name = "thêmVậtTưToolStripMenuItem";
-            this.thêmVậtTưToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.thêmVậtTưToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thêmVậtTưToolStripMenuItem.Text = "Thêm Vật Tư";
             this.thêmVậtTưToolStripMenuItem.Click += new System.EventHandler(this.thêmVậtTưToolStripMenuItem_Click);
             // 
             // thêmLoạiVậtTưToolStripMenuItem
             // 
+            this.thêmLoạiVậtTưToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.image;
             this.thêmLoạiVậtTưToolStripMenuItem.Name = "thêmLoạiVậtTưToolStripMenuItem";
-            this.thêmLoạiVậtTưToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.thêmLoạiVậtTưToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thêmLoạiVậtTưToolStripMenuItem.Text = "Thêm Loại Vật Tư";
             this.thêmLoạiVậtTưToolStripMenuItem.Click += new System.EventHandler(this.thêmLoạiVậtTưToolStripMenuItem_Click);
             // 
@@ -157,20 +176,14 @@ namespace Cost_Management
             // 
             this.nguyênLiệuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýNguyênLiệuToolStripMenuItem});
+            this.nguyênLiệuToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.flour;
             this.nguyênLiệuToolStripMenuItem.Name = "nguyênLiệuToolStripMenuItem";
-            this.nguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
+            this.nguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
             this.nguyênLiệuToolStripMenuItem.Text = "Nguyên Liệu";
-            // 
-            // thoátToolStripMenuItem
-            // 
-            this.thoátToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.logout;
-            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
-            this.thoátToolStripMenuItem.Text = "Thoát";
-            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // quảnLýNguyênLiệuToolStripMenuItem
             // 
+            this.quảnLýNguyênLiệuToolStripMenuItem.Image = global::Cost_Management.Properties.Resources.eggs;
             this.quảnLýNguyênLiệuToolStripMenuItem.Name = "quảnLýNguyênLiệuToolStripMenuItem";
             this.quảnLýNguyênLiệuToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.quảnLýNguyênLiệuToolStripMenuItem.Text = "Quản Lý Nguyên Liệu";

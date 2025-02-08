@@ -284,6 +284,7 @@ namespace Cost_Management
             this.quảnLýVậtTưToolStripMenuItem.Name = "quảnLýVậtTưToolStripMenuItem";
             this.quảnLýVậtTưToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.quảnLýVậtTưToolStripMenuItem.Text = "Quản lý vật tư";
+            this.quảnLýVậtTưToolStripMenuItem.Click += new System.EventHandler(this.quảnLýVậtTưToolStripMenuItem_Click);
             // 
             // frm_Product
             // 

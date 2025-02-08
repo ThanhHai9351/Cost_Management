@@ -76,5 +76,11 @@ namespace Cost_Management
             frm_Product frm = new frm_Product();
             showForm(frm);
         }
+
+        private void traCứuGiáToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frm_PriceLookup frm = new frm_PriceLookup();
+            showForm(frm);
+        }
     }
 }

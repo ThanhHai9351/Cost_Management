@@ -55,3 +55,5 @@ F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Cre
 F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Ingredient.resources
 F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Product.resources
 F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Product_Ingredient.resources
+F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_Product_Material.resources
+F:\Labone_task\Cost_Management\Cost_Management\obj\Debug\Cost_Management.frm_PriceLookup.resources

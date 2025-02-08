@@ -60,5 +60,11 @@ namespace BLL
         {
             return dal_p_i.deleteProductIngredient(product_code, ingredient_id);
         }
+
+        public int getTotalPrice(string productCode)
+        {
+            List<m_Product_Ingredient> lists = getListIngredientFromProduct(productCode) ?? new List<m_Product_Ingredient>();
+            return lists.Sum(m => m.price ?? 0);
+        }
     }
 }

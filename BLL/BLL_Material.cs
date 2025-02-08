@@ -20,6 +20,14 @@ namespace BLL
             return dal_mt.getMaterials();
         }
 
+        public string getMaterialName(string material_id)
+        {
+            t_Material item = getMaterials().Where(m => m.material_id == material_id).FirstOrDefault();
+            if (item == null)
+                return "";
+            return item.material_name;
+        }
+
         public bool updateMaterial(t_Material item)
         {
             return dal_mt.updateMaterial(item);

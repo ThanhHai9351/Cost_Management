@@ -59,6 +59,11 @@
     <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\pc\Downloads\microsoft.office.interop.excel\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.26\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
@@ -145,11 +150,23 @@
     <Compile Include="frm_Ingredient.Designer.cs">
       <DependentUpon>frm_Ingredient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_PriceLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PriceLookup.Designer.cs">
+      <DependentUpon>frm_PriceLookup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Product_Ingredient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Product_Ingredient.Designer.cs">
       <DependentUpon>frm_Product_Ingredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Product_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Product_Material.Designer.cs">
+      <DependentUpon>frm_Product_Material.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ViewMaterial.cs">
       <SubType>Form</SubType>
@@ -180,8 +197,14 @@
     <EmbeddedResource Include="frm_Ingredient.resx">
       <DependentUpon>frm_Ingredient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_PriceLookup.resx">
+      <DependentUpon>frm_PriceLookup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Product_Ingredient.resx">
       <DependentUpon>frm_Product_Ingredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Product_Material.resx">
+      <DependentUpon>frm_Product_Material.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ViewMaterial.resx">
       <DependentUpon>frm_ViewMaterial.cs</DependentUpon>
@@ -230,6 +253,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\transparency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\processing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
